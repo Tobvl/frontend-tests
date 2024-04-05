@@ -1,0 +1,4 @@
+.menu_navbar {
+    display: flex;
+    justify-content: space-between;
+}
