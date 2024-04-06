@@ -1,4 +1,86 @@
-.menu_navbar {
+/* Quitar bordes blancos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo principal del menú de navegación */
+.menu-navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 2rem;
+    background-color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu-navbar li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.menu-navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(68, 110, 112);
+    border-radius:5px;
+    border: 1px solid rgb(68, 110, 112);
+    font-weight: bold;
+    transition: border-radius 0.4s, box-shadow 0.2s;
+}
+
+.menu-navbar li a:hover {
+    background-color: rgb(134, 192, 195);
+    border-radius: 22px;
+    border: 1px solid #666;
+    color: #333;
+    box-shadow: 0 0 15px #444;
+}
+
+.menu-navbar li a.active {
+    background-color: rgb(134, 192, 195);
+    border: 1px solid #333;
+    color: #333;
+}
+
+footer {
+    display:block;
+    margin-top: 10rem;
+    background-color: #333;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    padding: 4rem;
+}
+
+footer a.active {
+    text-decoration: underline;
+}
+
+/* Estilo principal de botón menú y oculto */
+.menu-boton {
+    display: none;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Botón para menú se muestra en dispositivos pequeños */
+
+@media(max-width: 850px){
+    .menu-boton {
+        display: block;
+
+    .menu-navbar
+        
+    }
 }

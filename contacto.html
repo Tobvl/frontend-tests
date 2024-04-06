@@ -9,11 +9,14 @@
 <body>
     
     <header>
-        <nav class="menu_navbar">
+        <nav class="menu-navbar">
             <h1>Supermercado TOTO</h1>
-                <li><a href="index.html">Inicio</a></li>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <a id="menu-boton" class="menu-boton"> <i class="fa fa-bars"></i></a>
         </nav>
     </header>
 
@@ -26,6 +29,11 @@
 
     <footer>
         <p>Supermercado TOTO - Todos los derechos reservados</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
     </footer>
     
 </body>
