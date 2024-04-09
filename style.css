@@ -67,7 +67,7 @@ footer a {
     color: #fff;
     text-decoration: none;
     font-style: italic;
-    padding: 4rem;
+    margin: 0rem 2rem;
 }
 
 /* Botón de footer en página activa */
@@ -83,13 +83,42 @@ footer a.active {
 }
 
 /* Botón para menú se muestra en dispositivos pequeños */
+#menu-cambiar {
+    display: none;
+}
 
-@media(max-width: 860px){
+.menu-r {
+    display: none;
+}
+
+/* Estilos para el navbar responsive */
+@media(max-width: 870px){
+
+    /* Botón que muestra menú */
     .menu-boton {
-        display: block;
+        display: flex;
     }
-    .boton-nav {
+
+    /* Quitar botones principales */
+    .botones {
         display: none;
-        
     }
+    
+    /* Acceder a propiedades hermanas del input checklist
+    y sus respectivos estilos con la pseudo-clase checked
+    y el combinador ~ */
+    #menu-cambiar:checked ~ .menu-r {
+        display: block;
+        background-color: cadetblue;
+    }   
+
+    #menu-cambiar:checked ~ .menu-r a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+    }
+    #menu-cambiar:checked ~ .menu-r a:hover {
+        background-color: cadetblue;
+    }
+
 }

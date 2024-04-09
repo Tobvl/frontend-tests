@@ -10,15 +10,27 @@
 <body>
     
     <header>
+        <input type="checkbox" id="menu-cambiar">
         <nav class="menu-navbar">
             <h1>Supermercado TOTO</h1>
+            <label class="menu-boton" for="menu-cambiar">
+                <a id="menu-boton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </label>
+            <ul class="botones">
+                <li><a href="index.html" class="boton-nav active">Inicio</a></li>
+                <li><a href="productos.html" class="boton-nav" >Productos</a></li>
+                <li><a href="contacto.html" class="boton-nav" >Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-r">
             <ul>
                 <li><a href="index.html" class="boton-nav active">Inicio</a></li>
                 <li><a href="productos.html" class="boton-nav" >Productos</a></li>
                 <li><a href="contacto.html" class="boton-nav" >Contacto</a></li>
             </ul>
-            <a id="menu-boton" class="menu-boton"> <i class="fa fa-bars"></i></a>
-        </nav>
+        </div>
     </header>
 
     <main>

@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Supermercado TOTO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
     <header>
+        <input type="checkbox" id="menu-cambiar">
         <nav class="menu-navbar">
             <h1>Supermercado TOTO</h1>
-            <ul>
+            <label class="menu-boton" for="menu-cambiar">
+                <a id="menu-boton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </label>
+            <ul class="botones">
                 <li><a href="index.html" class="boton-nav">Inicio</a></li>
                 <li><a href="productos.html" class="boton-nav active" >Productos</a></li>
                 <li><a href="contacto.html" class="boton-nav" >Contacto</a></li>
             </ul>
-            <a id="menu-boton" class="menu-boton"> <i class="fa fa-bars"></i></a>
         </nav>
+        <div class="menu-r">
+            <ul>
+                <li><a href="index.html" class="boton-nav active">Inicio</a></li>
+                <li><a href="productos.html" class="boton-nav" >Productos</a></li>
+                <li><a href="contacto.html" class="boton-nav" >Contacto</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
