@@ -88,7 +88,9 @@ footer a.active {
 }
 
 .menu-r {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* Estilos para el navbar responsive */
@@ -109,7 +111,11 @@ footer a.active {
     y el combinador ~ */
     #menu-cambiar:checked ~ .menu-r {
         display: block;
+        visibility: visible;
+        opacity: 1;
+        position: unset;
         background-color: cadetblue;
+        transition: opacity 0.4s, visibility 0.4s, position 0.4s;
     }   
 
     #menu-cambiar:checked ~ .menu-r a {
