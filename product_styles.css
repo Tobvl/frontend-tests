@@ -1,0 +1,72 @@
+/* Estilos de catálogos */
+/* Contenedor de los catalogos */
+.catalogos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+/* Estilo de catálogos */
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.catalogo:hover {
+    box-shadow: 0 0 20px #444;
+    transition: box-shadow 0.2s;
+}
+
+.catalogo img {
+    width: 300px;
+    height: 200px;
+}
+
+.catalogo h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.catalogo span {
+    text-align: center;
+    margin: 1rem;
+}
+
+.boton-vercatalogo {
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(68, 110, 112);
+    border-radius:5px;
+    border: 1px solid rgb(68, 110, 112);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: border-radius 0.4s, box-shadow 0.2s;
+}
+
+/* Estilos de productos */
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem;
+}
+div{
+    border: 2px solid black;
+}
