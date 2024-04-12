@@ -76,10 +76,12 @@
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 2rem;
+
     }
     /* Estilo de catálogos */
     .catalogo {
         display: flex;
+        flex: 30%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
