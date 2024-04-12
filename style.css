@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+/* Que todos los elementos del body se desplieguen en forma de columna
+    y que el mínimo de altura del body sea el 100% del viewport */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Estilo principal del menú de navegación */
 .menu-navbar {
     display: flex;
@@ -26,12 +34,25 @@ se muestren en una sola linea */
 .boton-nav {
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
     background-color: rgb(68, 110, 112);
     border-radius:5px;
     border: 1px solid rgb(68, 110, 112);
     font-weight: bold;
+    text-transform: uppercase;
+    transition: border-radius 0.4s, box-shadow 0.2s;
+}
+/* Botones del navbar RESPONSIVE y su transición */
+.boton-nav-r {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    background-color: rgb(68, 110, 112);
+    border: 1px solid rgb(68, 110, 112);
+    font-weight: bold;
+    text-transform: uppercase;
     transition: border-radius 0.4s, box-shadow 0.2s;
 }
 
@@ -54,12 +75,13 @@ se muestren en una sola linea */
 /* Footer */
 footer {
     display:block;
-    margin-top: 10rem;
+    margin-top: auto;
     background-color: #333;
     color: #fff;
     align-items: center;
     text-align: center;
     padding: 10px;
+    /* mantener al final de la pagina */
 }
 
 /* Links del footer */
@@ -68,6 +90,13 @@ footer a {
     text-decoration: none;
     font-style: italic;
     margin: 0rem 2rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
 }
 
 /* Botón de footer en página activa */
@@ -120,7 +149,7 @@ footer a.active {
 
     #menu-cambiar:checked ~ .menu-r a {
         display: block;
-        padding: 1rem;
+        padding: 2vh;
         text-align: center;
     }
     #menu-cambiar:checked ~ .menu-r a:hover {
