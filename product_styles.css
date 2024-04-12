@@ -69,7 +69,43 @@
 }
 
 @media(max-width: 870px){
-    .catalogo{
-        width: 30%;
+
+    /* Contenedor de los catalogos */
+    .catalogos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    /* Estilo de catálogos */
+    .catalogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .catalogo:hover {
+        box-shadow: 0 0 20px #444;
+        transition: box-shadow 0.2s;
+    }
+    
+    .catalogo img {
+        width: 150px;
+        height: 100px;
+    }
+    
+    .catalogo h3{
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .catalogo span {
+        text-align: center;
+        margin: 1rem;
+        max-width: 50%;
     }
 }
