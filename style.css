@@ -22,12 +22,30 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Estilo del logo de la empresa en el navbar */
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    align-self: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.logo img{
+    max-width: 60%;
+    max-height: 60%;
+}
+
 
 /* Que los items de tipo li en el navbar
 se muestren en una sola linea */
 .menu-navbar li {
     display: inline-block;
     padding: 1rem;
+}
+.menu-navbar ul{
+    align-self: center;
 }
 
 /* Botones del navbar y su transición */
@@ -72,14 +90,75 @@ se muestren en una sola linea */
     color: #333;
 }
 
-/* Contenedor de la página */
+/* Contenedor arriba de catalogos */
 .top-catalogos {
-
+    display: flex;
+    flex-direction: column;
     margin: 2rem;
-    
+    justify-content: center;
+    align-items: center;
 }
 
+/* Página principal */
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
 
+}
+
+.boton-vercatalogos {
+    margin: 4rem;
+    text-decoration: none;
+    border: 2px solid cadetblue;    
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: rgb(134, 192, 195);
+}
+
+.principal label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+
+}
+
+.buscar-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.buscar-productos input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+}
+
+.buscar-productos button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    background-color: rgb(134, 192, 195);
+    color: #333;
+    font-weight: bold;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.redes-sociales a{
+    font-size: 1.5rem;
+    margin: 1rem 4rem;
+}
 
 /* Footer */
 footer {
@@ -132,11 +211,12 @@ footer a.active {
 }
 
 /* Estilos para el navbar responsive */
-@media(max-width: 870px){
+@media(max-width: 980px){
 
     /* Botón que muestra menú */
     .menu-boton {
         display: flex;
+        align-self: center;
     }
 
     /* Quitar botones principales */
