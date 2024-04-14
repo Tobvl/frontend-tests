@@ -251,6 +251,14 @@ footer a.active {
     opacity: 0;
 }
 
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25vh;
+
+}
+
 /* Estilos para el navbar responsive */
 @media(max-width: 980px){
 
@@ -288,4 +296,17 @@ footer a.active {
         background-color: cadetblue;
     }
 
+    .buscar-productos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
