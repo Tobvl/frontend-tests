@@ -61,12 +61,20 @@
 
 /* Estilos de productos */
 
-.contenedor-productos {
+.top-productos {
     display: flex;
+    flex-direction: column;
+    margin: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    align-items: center;
 }
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    justify-content: center;
+}
+
 .producto {
     display: flex;
     flex-direction: column;
@@ -74,7 +82,111 @@
     align-items: center;
     border: 1px solid black;
     margin: 1rem;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    transition: all 0.2s ease-out;
+    text-align: center;
+    p {
+        max-width: 75%;
+    }
+}
+
+.producto:hover {
+    box-shadow: 0 0 20px #444;
+    scale: 1.015;
+    transition: box-shadow 0.2s, scale 0.2s ease-in-out;
+}
+
+.producto-oferta{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem 0rem 2rem;
+    color: white;
+    background-color: rgb(68, 110, 112);
+    transition: all 0.3s ease-out;
+    text-align: center;
+    p {
+        max-width: 75%;
+    }
+    
+    .porc-off {
+        transition: all 0.2s ease-out;
+    }
+}
+
+.producto-oferta:hover {
+    box-shadow: 0 0 30px rgb(68, 110, 112);
+    scale: 1.04;
+
+    .porc-off {
+        box-shadow: 0 0 15px rgb(68, 110, 112);
+        scale: 1.25;
+        transition: all 0.2s ease-out;
+    }
+}
+
+.precio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.precio-antes {
+    font-size: 1rem;
+    text-decoration: line-through;
+    margin-right: 2rem;
+}
+
+.producto img {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    width: auto;
+    height: 220px;
+}
+.producto-oferta img {
+    width: auto;
+    height: 240px;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.oferta-texto {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+.porc-off {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: cadetblue;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.boton-agregarcarrito{
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(68, 110, 112);
+    border-radius:5px;
+    border: 1px solid rgb(68, 110, 112);
+    font-weight: bold;
+    font-size: medium;
+    text-transform: uppercase;
+    transition: border-radius 0.4s, box-shadow 0.2s;
+}
+.producto-oferta .boton-agregarcarrito {
+    background-color: rgb(134, 192, 195);
+    border: 1px solid rgb(134, 192, 195);
+
 }
 
 @media(max-width: 980px){
@@ -119,4 +231,128 @@
         margin: 1rem;
         max-width: 50%;
     }
+
+    .contenedor-productos {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 30% 30%;
+        justify-content: center;
+    }
+    
+    .producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin: 1rem;
+        padding: 6rem 0.2rem 6rem 0.2rem;
+        transition: all 0.2s ease-out;
+        font-size: 0.75rem;
+        text-align: center;
+        p {
+            max-width: 75%;
+        }
+    }
+    
+    .producto:hover {
+        box-shadow: 0 0 20px #444;
+        scale: 1.015;
+        transition: box-shadow 0.2s, scale 0.2s ease-in-out;
+    }
+    
+    .producto-oferta{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin: 1rem;
+        padding: 8rem 0.2rem 8rem 0.2rem;
+        color: white;
+        background-color: rgb(68, 110, 112);
+        transition: all 0.3s ease-out;
+        font-size: 0.75rem;
+        text-align: center;
+        p {
+            max-width: 75%;
+        }
+
+        .porc-off {
+            transition: all 0.2s ease-out;
+        }
+    }
+    
+    .producto-oferta:hover {
+        box-shadow: 0 0 30px rgb(68, 110, 112);
+        scale: 1.04;
+    
+        .porc-off {
+            box-shadow: 0 0 15px rgb(68, 110, 112);
+            scale: 1.2;
+            transition: all 0.2s ease-out;
+        }
+    }
+    
+    .producto img {
+        width: auto;
+        height: 75px;
+        max-width: 80%;
+    }
+    .producto-oferta img {
+        width: auto;
+        height: 75px;
+        max-width: 80%;
+    }
+    
+    .precio {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1rem;
+    }
+
+    .precio-antes {
+        font-size: 0.5rem;
+        text-decoration: line-through;
+        margin-right: 1rem;
+    }
+    
+    .oferta-texto {
+        font-size: 0.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0.5rem;
+    }
+    .porc-off {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        background-color: cadetblue;
+        color: white;
+        padding: 3px 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 3px;
+    }
+    
+    .boton-agregarcarrito{
+        text-decoration: none;
+        color: #fff;
+        margin: 0.5rem;
+        padding: 0.25rem;
+        background-color: rgb(68, 110, 112);
+        border-radius:4px;
+        border: 1px solid rgb(68, 110, 112);
+        font-weight: bold;
+        font-size: smaller;
+        text-transform: uppercase;
+        transition: border-radius 0.4s, box-shadow 0.2s;
+    }
+    .producto-oferta .boton-agregarcarrito {
+        background-color: rgb(134, 192, 195);
+        border: 1px solid rgb(134, 192, 195);
+    
+    }
+    
 }

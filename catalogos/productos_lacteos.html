@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../product_styles.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="https://kit.fontawesome.com/874583b05c.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+    <link rel="icon" type="image/x-icon" href=".././imagenes/favicon.ico">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <header>
         <input type="checkbox" id="menu-cambiar">
         <nav class="menu-navbar">
-            <a href="index.html" class="logo"><img src="./imagenes/logo.png" alt="Logo"></a>
+            <a href="../index.html" class="logo"><img src=".././imagenes/logo.png" alt="Logo"></a>
             <label class="menu-boton" for="menu-cambiar">
                 <a id="menu-boton">
                     <i class="fa-solid fa-bars"></i>
@@ -41,21 +41,52 @@
     </header>
 
     <main>
-        <h2>
-            Lacteos disponibles en Supermercado TOTO
-        </h2>
+        <div class="top-productos">
+            <h2>Productos Lácteos</h2>
+        </div>
         <!-- Producto -->
         <div class="contenedor-productos">
+
             <div class="producto">
-                <img src="imagenes/lacteos/leche_soprole1lt.jpg" alt="Leche">
-                <h3>Leche Soprole 1lt</h3>
-                <p>Leche entera Soprole 1lt extraída de las vacas más puras del sur.</p>
-                <p>$1.290</p>
-                <button>Agregar al carrito</button>
+                <h3>Yoghurt Colun Natural</h3>
+                <h5>SKU: 099182</h5>
+                <img src=".././imagenes/lacteos/yoghurt-colun.jpg" alt="Leche">
+                <p>Yoghurt natural no endulzado, batido y cremoso.</p>
+                <p class="precio">$320</p>
+                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al carrito</button>
             </div>
-        </div>
-        <div>
-            holahoalh
+
+            <div class="producto-oferta">
+                <i class="porc-off">30% OFF</i>
+                <span class="oferta-texto"><i class="fa-solid fa-bullhorn"></i> OFERTA!</span>
+                <h3>Leche Soprole 1lt</h3>
+                <h5>SKU: 113824</h5>
+                <img src=".././imagenes/lacteos/leche_soprole1lt-proteina.png" alt="Leche">
+                <p>Leche descremada alta en proteina, sin lactora ni azucares.</p>
+                <p class="precio"><span class="precio-antes">antes $1.840</span>$1.290</p>
+                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al carrito</button>
+            </div>
+
+            <div class="producto-oferta">
+                <i class="porc-off">20% OFF</i>
+                <span class="oferta-texto"><i class="fa-solid fa-bullhorn"></i> OFERTA!</span>
+                <h3>Mantequilla Qualy 500g</h3>
+                <h5>SKU: 113821</h5>
+                <img src=".././imagenes/lacteos/qualy.png" alt="Leche">
+                <p>La mantequilla cremosa más vendida en el mercado chileno.</p>
+                <p class="precio"><span class="precio-antes">antes $3.400</span>$2.790</p>
+                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3>Leche Soprole 1lt</h3>
+                <h5>SKU: 113824</h5>
+                <img src=".././imagenes/lacteos/leche_soprole1lt.png" alt="Leche">
+                <p>Leche entera Soprole 1lt extraída de las vacas más puras del sur.</p>
+                <p class="precio">$990</p>
+                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al carrito</button>
+            </div>
+            
         </div>
     </main>
 
