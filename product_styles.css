@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     margin-top: 2rem;
 }
+
 /* Estilo de catálogos */
 .catalogo {
     display: flex;
@@ -15,6 +16,7 @@
     border: 1px solid black;
     margin: 1rem;
     padding: 2rem;
+    transition: box-shadow 0.4s ease-out;
 }
 
 .catalogo:hover {
@@ -47,7 +49,7 @@
     border: 1px solid rgb(68, 110, 112);
     font-weight: bold;
     text-transform: uppercase;
-    transition: border-radius 0.4s, box-shadow 0.2s;
+    transition: border-radius 0.4s, box-shadow 0.2s ease-out;
 }
 
 .boton-vercatalogo:hover {
@@ -60,7 +62,6 @@
 }
 
 /* Estilos de productos */
-
 .top-productos {
     display: flex;
     flex-direction: row;
@@ -79,7 +80,7 @@
     border: 1px solid rgb(68, 110, 112);
     font-weight: bold;
     text-transform: uppercase;
-    transition: border-radius 0.4s, box-shadow 0.2s;
+    transition: border-radius 0.4s, box-shadow 0.4s ease-out;
     cursor: pointer;
 }
 .boton-producto-volver:hover {
@@ -108,7 +109,7 @@
     text-align: center;
     p {
         max-width: 75%;
-    }
+    };
 }
 
 .producto:hover {
@@ -132,11 +133,11 @@
     text-align: center;
     p {
         max-width: 75%;
-    }
+    };
     
     .porc-off {
         transition: all 0.2s ease-out;
-    }
+    };
 }
 
 .producto-oferta:hover {
@@ -205,10 +206,17 @@
     text-transform: uppercase;
     transition: border-radius 0.4s, box-shadow 0.2s;
 }
+.boton-agregarcarrito:hover {
+    color: #111;
+}
+
 .producto-oferta .boton-agregarcarrito {
     background-color: rgb(134, 192, 195);
     border: 1px solid rgb(134, 192, 195);
 
+}
+.producto-oferta .boton-agregarcarrito:hover {
+    color: #333;
 }
 
 @media(max-width: 980px){
