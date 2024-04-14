@@ -5,7 +5,8 @@
 }
 
 /* Que todos los elementos del body se desplieguen en forma de columna
-    y que el mínimo de altura del body sea el 100% del viewport */
+    y que el mínimo de altura del body sea el 100% del viewport, para
+    que el footer se vea donde debe estar */
 body {
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@ body {
     list-style: none;
     padding: 1rem 1.5rem 1.5rem 1rem;
     background-color: cadetblue;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
 }
 
 /* Estilo del logo de la empresa en el navbar */
@@ -32,11 +33,11 @@ body {
     margin-left: 3rem;
     margin-right: 3rem;
 }
+
 .logo img{
     max-width: 60%;
     max-height: 60%;
 }
-
 
 /* Que los items de tipo li en el navbar
 se muestren en una sola linea */
@@ -44,6 +45,7 @@ se muestren en una sola linea */
     display: inline-block;
     padding: 1rem;
 }
+/* Que se alineen los botones verticalmente en el navbar */
 .menu-navbar ul{
     align-self: center;
 }
@@ -59,7 +61,7 @@ se muestren en una sola linea */
     border: 1px solid rgb(68, 110, 112);
     font-weight: bold;
     text-transform: uppercase;
-    transition: border-radius 0.4s, box-shadow 0.2s;
+    transition: border-radius 0.4s, box-shadow 0.4s ease-out;
 }
 /* Botones del navbar RESPONSIVE y su transición */
 .boton-nav-r {
@@ -148,16 +150,25 @@ form {
     justify-content: center;
     align-items: center;
     margin: 2rem;
-
+    text-align: center;
 }
 
 .boton-vercatalogos {
     margin: 4rem;
     text-decoration: none;
     border: 2px solid cadetblue;    
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 1rem;
     background-color: rgb(134, 192, 195);
+    transition: border-radius 0.3s ease-out;
+}
+
+.boton-vercatalogos:hover {
+    background-color: rgb(97, 163, 167);
+    border-radius: 15px;
+    border: 2px solid #666;
+    color: #fff;
+    box-shadow: 0 0 15px #444;
 }
 
 .principal label {
@@ -225,7 +236,7 @@ footer a {
 footer nav {
     display: flex;
     justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
     font-size: 0.8rem;
 }
 
@@ -246,12 +257,14 @@ footer a.active {
     display: none;
 }
 
+/* Menú navbar responsive */
 .menu-r {
-    position: absolute;
+    position: absolute; /* posición absoluta relativa al body */
     visibility: hidden;
     opacity: 0;
 }
 
+/* Página en construcción */
 .feature {
     display: flex;
     justify-content: center;
@@ -291,7 +304,7 @@ footer a.active {
         display: block;
         visibility: visible;
         opacity: 1;
-        position: unset;
+        position: relative; /* posición relativa a su posición normal */
         background-color: cadetblue;
         transition: opacity 0.4s, visibility 0.4s, position 0.4s;
         border: none;
