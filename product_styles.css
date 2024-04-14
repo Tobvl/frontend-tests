@@ -63,15 +63,36 @@
 
 .top-productos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 1rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.boton-producto-volver{
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(68, 110, 112);
+    border-radius:5px;
+    border: 1px solid rgb(68, 110, 112);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: border-radius 0.4s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.boton-producto-volver:hover {
+    background-color: rgb(134, 192, 195);
+    border-radius: 11px;
+    border: 1px solid #666;
+    color: #333;
+    box-shadow: 0 0 15px #444;
 }
 
 .contenedor-productos {
     display: grid;
-    grid-template-columns: 25% 25%;
+    grid-template-columns: 35% 35%;
     justify-content: center;
 }
 
@@ -133,6 +154,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin: 1rem;
+        display: grid;
 }
 
 .precio-antes {
@@ -269,7 +291,7 @@
         align-items: center;
         border: 1px solid black;
         margin: 1rem;
-        padding: auto 0.2rem auto 0.2rem;
+        padding: auto;
         color: white;
         background-color: rgb(68, 110, 112);
         transition: all 0.3s ease-out;
@@ -310,6 +332,7 @@
         font-size: 1rem;
         font-weight: bold;
         margin: 1rem;
+        display: grid;
     }
 
     .precio-antes {

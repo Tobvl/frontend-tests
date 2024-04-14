@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,10 +25,11 @@
             </label>
             <ul class="botones">
                 <li><a href="../index.html" class="boton-nav"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a href="../productos.html" class="boton-nav active"><i class="fa-solid fa-shop"></i> Productos</a></li>
+                <li><a href="../productos.html" class="boton-nav active"><i class="fa-solid fa-shop"></i> Productos</a>
+                </li>
                 <li><a href="../contacto.html" class="boton-nav"><i class="fa-solid fa-phone"></i> Contacto</a></li>
                 <li><a href="../carrito.html" class="boton-nav fa-solid fa-cart-shopping"></a></li>
-                
+
             </ul>
         </nav>
         <div class="menu-r">
@@ -42,51 +44,56 @@
 
     <main>
         <div class="top-productos">
-            <h2>Productos Lácteos</h2>
+            <h2>Productos Gaseosas & Alcohol</h2>
+            <button onclick="history.back()" class="boton-producto-volver">Volver atrás</button>
         </div>
         <!-- Producto -->
         <div class="contenedor-productos">
 
+            <div class="producto-oferta">
+                <i class="porc-off">¡70% OFF!</i>
+                <span class="oferta-texto"><i class="fa-solid fa-bullhorn"></i> OFERTA!</span>
+                <h3>Pack Piscola Mistral & Coca-Cola + 1kg Hielo</h3>
+                <h5>SKU: travieso alcohólico</h5>
+                <img src=".././imagenes/gaseosas/pack-piscola.png" alt="Leche">
+                <p>Pack Pisco Mistral 1lt + Coca-Cola 3lt + 1kg Hielo.</p>
+                <p class="precio"><span class="precio-antes">antes $16.490</span>$4.950</p>
+                <button onclick="alert('Te pillé...\n¡¡¡¡Alcohólico!!!!')" class="boton-agregarcarrito">Agregar al
+                    carrito</button>
+            </div>
+
             <div class="producto">
-                <h3>Yoghurt Colun Natural</h3>
-                <h5>SKU: 099182</h5>
-                <img src=".././imagenes/lacteos/yoghurt-colun.jpg" alt="Leche">
-                <p>Yoghurt natural no endulzado, batido y cremoso.</p>
-                <p class="precio">$320</p>
-                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al carrito</button>
+                <h3>Pack 3 Bebidas 1.5lt</h3>
+                <h5>SKU: 51928</h5>
+                <img src=".././imagenes/gaseosas/pack3x1-5lt.png" alt="Leche">
+                <p>Pack oferta 3 bebidas 1.5lt Fanta, Coca-Cola, Sprite.</p>
+                <p class="precio">$2.690</p>
+                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al
+                    carrito</button>
+            </div>
+
+            <div class="producto">
+                <h3>Pack 24 Monster Energy 470cc</h3>
+                <h5>SKU: 22918</h5>
+                <img src=".././imagenes/gaseosas/monster-pack24.png" alt="Leche">
+                <p>Pack 24 unidades Monster Energy.</p>
+                <p class="precio">$35.980</p>
+                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al
+                    carrito</button>
             </div>
 
             <div class="producto-oferta">
-                <i class="porc-off">30% OFF</i>
+                <i class="porc-off">60% OFF</i>
                 <span class="oferta-texto"><i class="fa-solid fa-bullhorn"></i> OFERTA!</span>
-                <h3>Leche Soprole 1lt</h3>
-                <h5>SKU: 113824</h5>
-                <img src=".././imagenes/lacteos/leche_soprole1lt-proteina.png" alt="Leche">
-                <p>Leche descremada alta en proteina, sin lactora ni azucares.</p>
-                <p class="precio"><span class="precio-antes">antes $1.840</span>$1.290</p>
-                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al carrito</button>
-            </div>
-
-            <div class="producto-oferta">
-                <i class="porc-off">20% OFF</i>
-                <span class="oferta-texto"><i class="fa-solid fa-bullhorn"></i> OFERTA!</span>
-                <h3>Mantequilla Qualy 500g</h3>
+                <h3>Yoni Walker Blue Label </h3>
                 <h5>SKU: 113821</h5>
-                <img src=".././imagenes/lacteos/qualy.png" alt="Leche">
-                <p>La mantequilla cremosa más vendida en el mercado chileno.</p>
-                <p class="precio"><span class="precio-antes">antes $3.400</span>$2.790</p>
-                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al carrito</button>
+                <img src=".././imagenes/gaseosas/bluelabel.png" alt="Leche">
+                <p>Siente el poder del elixir entrando por tu tráquea, importado directamente desde el himalaya.</p>
+                <p class="precio"><span class="precio-antes">antes $859.000</span>$343.600</p>
+                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al
+                    carrito</button>
             </div>
 
-            <div class="producto">
-                <h3>Leche Soprole 1lt</h3>
-                <h5>SKU: 113824</h5>
-                <img src=".././imagenes/lacteos/leche_soprole1lt.png" alt="Leche">
-                <p>Leche entera Soprole 1lt extraída de las vacas más puras del sur.</p>
-                <p class="precio">$990</p>
-                <button onclick="alert('Oops...\nAún no termino!!!!')" class="boton-agregarcarrito">Agregar al carrito</button>
-            </div>
-            
         </div>
     </main>
 
