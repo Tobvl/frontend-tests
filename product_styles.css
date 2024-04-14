@@ -235,8 +235,8 @@
     .contenedor-productos {
         display: grid;
         grid-template-columns: 45% 45%;
-        grid-template-rows: 30% 30%;
         justify-content: center;
+        grid-template-rows: 30% 30% none;
     }
     
     .producto {
@@ -246,7 +246,7 @@
         align-items: center;
         border: 1px solid black;
         margin: 1rem;
-        padding: 6rem 0.2rem 6rem 0.2rem;
+        padding: auto 0.2rem auto 0.2rem;
         transition: all 0.2s ease-out;
         font-size: 0.75rem;
         text-align: center;
@@ -269,7 +269,7 @@
         align-items: center;
         border: 1px solid black;
         margin: 1rem;
-        padding: 8rem 0.2rem 8rem 0.2rem;
+        padding: auto 0.2rem auto 0.2rem;
         color: white;
         background-color: rgb(68, 110, 112);
         transition: all 0.3s ease-out;
