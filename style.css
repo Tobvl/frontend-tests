@@ -98,6 +98,47 @@ se muestren en una sola linea */
     justify-content: center;
     align-items: center;
 }
+.top-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulario de contacto */
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 2rem 2rem 2rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+.boton-formulario{
+    padding: 0.5rem;
+    border: 1px solid cadetblue;
+    border-radius: 8px;
+    background-color: rgb(134, 192, 195);
+    color: #333;
+    font-weight: bold;
+}
+
+.boton-formulario:hover {
+    background-color: rgb(68, 110, 112);
+    border-radius: 10px;
+    border: 1px solid #666;
+    color: #fff;
+    scale: 1.3;
+    transition: scale 0.5s, border-radius 0.5s; 
+}
 
 /* Página principal */
 .principal {

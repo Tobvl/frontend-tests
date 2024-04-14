@@ -38,10 +38,24 @@
         </div>
     </header>
     <main>
-        <section>
-            <h2>¡Bienvenidos a Supermercado TOTO!</h2>
+        <section class="top-contacto">
+            <h2>¡Contáctanos!</h2>
             <p>En Supermercado TOTO encontrarás los mejores productos a los mejores precios. ¡No dudes en visitarnos!</p>
         </section>
+        <section class="contacto">
+            <div class="formulario-contacto">
+                <h3>Envíanos un mensaje</h3>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </form>
+                <button class="boton-formulario" onclick="alert('Estamos trabajando todavía..!')">Enviar</button>
+            </div>
+        <section>
     </main>
 
     <footer>
